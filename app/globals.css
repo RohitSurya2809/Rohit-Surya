@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gradient text effects */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    @apply bg-background/80 backdrop-blur-xl border border-border/50;
+  }
+
+  /* Animation delays for staggered effects */
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  /* Scroll animations - will be triggered by JavaScript */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scroll-slide-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .scroll-slide-left.revealed {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .scroll-slide-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .scroll-slide-right.revealed {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-playfair: 'Playfair Display', serif;
+    
+    /* Professional Color Palette - Light Mode */
+    /* Sophisticated slate/navy with warm cream and gold accents */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+    --primary: 215 30% 25%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 215 25% 35%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 15% 45%;
+    --accent: 43 74% 58%;
+    --accent-foreground: 215 25% 15%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 43 74% 58%;
+    --chart-1: 215 30% 45%;
+    --chart-2: 43 74% 58%;
+    --chart-3: 195 70% 50%;
+    --chart-4: 260 60% 60%;
+    --chart-5: 30 80% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 210 20% 98%;
+    --sidebar-foreground: 215 25% 15%;
+    --sidebar-primary: 215 30% 25%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 43 74% 58%;
+    --sidebar-accent-foreground: 215 25% 15%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 43 74% 58%;
+  }
+  
+  .dark {
+    /* Professional Color Palette - Dark Mode */
+    /* Rich dark navy with gold/amber highlights */
+    --background: 215 28% 12%;
+    --foreground: 210 20% 92%;
+    --card: 215 25% 16%;
+    --card-foreground: 210 20% 92%;
+    --popover: 215 25% 16%;
+    --popover-foreground: 210 20% 92%;
+    --primary: 43 74% 58%;
+    --primary-foreground: 215 28% 12%;
+    --secondary: 215 25% 30%;
+    --secondary-foreground: 210 20% 92%;
+    --muted: 215 25% 20%;
+    --muted-foreground: 210 15% 65%;
+    --accent: 43 84% 65%;
+    --accent-foreground: 215 28% 12%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 210 20% 92%;
+    --border: 215 25% 20%;
+    --input: 215 25% 20%;
+    --ring: 43 74% 58%;
+    --chart-1: 43 74% 58%;
+    --chart-2: 195 70% 55%;
+    --chart-3: 260 60% 65%;
+    --chart-4: 30 80% 60%;
+    --chart-5: 215 25% 50%;
+    --sidebar-background: 215 28% 14%;
+    --sidebar-foreground: 210 20% 92%;
+    --sidebar-primary: 43 74% 58%;
+    --sidebar-primary-foreground: 215 28% 12%;
+    --sidebar-accent: 43 84% 65%;
+    --sidebar-accent-foreground: 215 28% 12%;
+    --sidebar-border: 215 25% 20%;
+    --sidebar-ring: 43 74% 58%;
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
