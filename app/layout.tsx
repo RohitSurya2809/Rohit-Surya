@@ -18,9 +18,15 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Rohit Surya A T - Portfolio",
   description: "Modern personal portfolio showcasing projects, skills, and achievements",
-  generator: "v0.app",
   icons: {
-    icon: "/icon.svg",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-light-32x32.png", sizes: "32x32", type: "image/png", media: "(prefers-color-scheme: light)" },
+      { url: "/icon-dark-32x32.png", sizes: "32x32", type: "image/png", media: "(prefers-color-scheme: dark)" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 }
 
