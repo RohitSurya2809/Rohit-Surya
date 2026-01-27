@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const isProduction = process.env.NODE_ENV === "production"
-const basePath = isProduction ? "/rohit-portfolio" : ""
+const isVercel = process.env.VERCEL === "1"
+
+// Only use basePath for GitHub Pages, not for Vercel
+const basePath = isProduction && !isVercel ? "/rohit-portfolio" : ""
 
 const nextConfig = {
   output: "export",
