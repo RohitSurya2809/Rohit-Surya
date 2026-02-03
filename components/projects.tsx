@@ -1,10 +1,28 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, ExternalLink, Lock, Sprout } from "lucide-react"
+import { Github, ExternalLink, Lock, Sprout, Bot } from "lucide-react"
 
 export function Projects() {
   const projects = [
+    {
+      title: "OPS-AGENT – Failure-Aware Agentic Automation System",
+      description:
+        "Built an AI-powered automation engine where LLMs plan tasks while deterministic tools execute them safely. Features agentic AI planning, confidence-based decision-making, human-in-the-loop oversight, and full audit logging. Integrates OpenAI GPT-4o-mini and Gemini with fallback support for reliable operational workflows like invoice processing and document validation.",
+      icon: Bot,
+      technologies: ["Python", "FastAPI", "OpenAI GPT-4o-mini", "Google Gemini", "PostgreSQL", "SQLAlchemy", "PyPDF2"],
+      features: [
+        "Agentic AI planning with LLM-generated execution plans",
+        "Tool-based deterministic execution with retry logic",
+        "Confidence scoring and risk assessment",
+        "Human-in-the-loop safety for low-confidence decisions",
+        "Dual LLM fallback (OpenAI ↔ Gemini)",
+        "Full audit trail with structured logging",
+      ],
+      status: "In Development",
+      githubUrl: "https://github.com/RohitSurya2809/opsagent",
+      demoUrl: null,
+    },
     {
       title: "VAULTEDGE – Banking Microservice",
       description:
@@ -19,7 +37,7 @@ export function Projects() {
         "Global exception handling",
         "Dockerized deployment for production",
       ],
-      status: "Production Ready",
+      status: "In Development",
       githubUrl: "https://github.com/RohitSurya2809/vaultedge",
       demoUrl: null,
     },
@@ -36,7 +54,7 @@ export function Projects() {
         "Mobile-first design for accessibility",
         "Data-driven crop recommendations",
       ],
-      status: "Production Ready",
+      status: "In Development",
       githubUrl: "https://github.com/RohitSurya2809/rankfarm_ai",
       demoUrl: null,
     },

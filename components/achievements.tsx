@@ -39,7 +39,7 @@ export function Achievements() {
       title: "Publications & Research",
       icon: FileText,
       achievements: [
-        "Paper on YUGI – GNN Recommender System (In Progress)",
+        "Paper on OPS-AGENT – Failure-Aware Agentic Automation System (In Progress)",
         "Co-researcher for UZHAVAR - Crop Recommendation (In Progress)",
         "Research Focus on Graph Neural Networks",
         "AI Automation Research",
@@ -95,7 +95,7 @@ export function Achievements() {
                 </p>
                 <div className="flex flex-wrap justify-center gap-3">
                   <Badge className="bg-secondary text-white hover:bg-secondary/90 px-4 py-2 text-sm font-medium">
-                    YUGI Paper - In Progress
+                    OPS Agent Paper - In Progress
                   </Badge>
                   <Badge className="bg-accent text-foreground hover:bg-accent/90 px-4 py-2 text-sm font-medium">
                     UZHAVAR Paper - In Progress
