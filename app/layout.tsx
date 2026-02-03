@@ -27,6 +27,8 @@ export const metadata: Metadata = {
     apple: [
       { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
     ],
+    // Fallback favicon.ico for browsers that don't support SVG favicons
+    shortcut: "/favicon.ico",
   },
 }
 
