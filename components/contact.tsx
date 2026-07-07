@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Github, Linkedin, Send, Code2 } from "lucide-react"
 
 export function Contact() {
   const contactInfo = [
@@ -39,6 +39,30 @@ export function Contact() {
       label: "LinkedIn",
       value: "rohit-surya-385143290",
       href: "https://www.linkedin.com/in/rohit-surya-385143290",
+    },
+    {
+      icon: Code2,
+      label: "LeetCode",
+      value: "Rohit_Surya2809",
+      href: "https://leetcode.com/u/Rohit_Surya2809",
+    },
+    {
+      icon: Code2,
+      label: "HackerRank",
+      value: "3143_RohitSurya",
+      href: "https://www.hackerrank.com/profile/3143_RohitSurya",
+    },
+    {
+      icon: Code2,
+      label: "Codeforces",
+      value: "Rohit_Surya",
+      href: "https://codeforces.com/profile/Rohit_Surya",
+    },
+    {
+      icon: Code2,
+      label: "AtCoder",
+      value: "Rohit2809",
+      href: "https://atcoder.jp/users/Rohit2809",
     },
   ]
 
