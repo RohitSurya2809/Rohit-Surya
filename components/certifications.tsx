@@ -5,6 +5,13 @@ import { Award, ExternalLink } from "lucide-react"
 export function Certifications() {
   const certifications = [
     {
+      name: "Getting Started with Deep Learning",
+      issuer: "Nvidia",
+      date: "2026",
+      credentialUrl: "#",
+      status: "Completed",
+    },
+    {
       name: "AI Foundations Associate",
       issuer: "Oracle Cloud Infrastructure",
       date: "2024",

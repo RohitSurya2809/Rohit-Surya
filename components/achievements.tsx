@@ -8,6 +8,7 @@ export function Achievements() {
       title: "Hackathons & Competitions",
       icon: Trophy,
       achievements: [
+        "Winner - Hackindia 2026 Spark 9",
         "Winner - TN Police Hackathon",
         "Winner - Blaze-A-Trial 2.0",
         "Finalist - HackIndia",
@@ -39,7 +40,7 @@ export function Achievements() {
       title: "Publications & Research",
       icon: FileText,
       achievements: [
-        "Paper on OPS-AGENT – Failure-Aware Agentic Automation System (In Progress)",
+        "Paper on OPS-AGENT – Failure-Aware Agentic Automation System (Awaiting Publication)",
         "Co-researcher for UZHAVAR - Crop Recommendation (In Progress)",
         "Research Focus on Graph Neural Networks",
         "AI Automation Research",
@@ -95,7 +96,7 @@ export function Achievements() {
                 </p>
                 <div className="flex flex-wrap justify-center gap-3">
                   <Badge className="bg-secondary text-white hover:bg-secondary/90 px-4 py-2 text-sm font-medium">
-                    OPS Agent Paper - In Progress
+                    OPS Agent Paper - Awaiting Publication
                   </Badge>
                   <Badge className="bg-accent text-foreground hover:bg-accent/90 px-4 py-2 text-sm font-medium">
                     UZHAVAR Paper - In Progress

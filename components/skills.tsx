@@ -12,7 +12,7 @@ export function Skills() {
     {
       title: "Backend & Frameworks",
       icon: Server,
-      skills: ["Spring Boot", "JPA/Hibernate", "REST APIs", "Flask"],
+      skills: ["FastAPI", "LangChain", "PyTorch", "Scikit-learn", "MCP"],
     },
     {
       title: "Database",

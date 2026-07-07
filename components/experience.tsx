@@ -14,7 +14,46 @@ export function Experience() {
             </p>
           </div>
 
-          <Card className="relative border-0 bg-white/95 backdrop-blur-sm hover:shadow-lg transition-all">
+          <div className="space-y-8">
+            <Card className="relative border-0 bg-white/95 backdrop-blur-sm hover:shadow-lg transition-all">
+              <div className="absolute left-8 top-16 bottom-8 w-0.5 bg-gradient-to-b from-secondary to-accent hidden md:block" />
+
+              <CardHeader>
+                <div className="flex items-start gap-4">
+                  <div className="p-4 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-xl relative z-10">
+                    <Briefcase className="w-6 h-6 text-secondary" />
+                  </div>
+                  <div className="flex-1">
+                    <CardTitle className="text-2xl mb-3 font-bold">AI Engineer (Pre-Placement Intern)</CardTitle>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-3 text-muted-foreground mb-2">
+                      <span className="font-bold text-secondary text-lg">Edgeverve, An Infosys Subsidiary</span>
+                      <div className="flex items-center gap-1 text-muted-foreground">
+                        <Calendar className="w-4 h-4" />
+                        <span>Present</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+
+              <CardContent className="ml-16 md:ml-20 space-y-6">
+                <div>
+                  <h4 className="font-bold text-foreground mb-4 text-lg">Focus Areas</h4>
+                  <ul className="space-y-3">
+                    <li className="text-muted-foreground flex items-start gap-3">
+                      <span className="w-2 h-2 bg-secondary rounded-full mt-2.5 flex-shrink-0" />
+                      <span>Developing Enterprise AI solutions and Agentic Automation systems</span>
+                    </li>
+                    <li className="text-muted-foreground flex items-start gap-3">
+                      <span className="w-2 h-2 bg-secondary rounded-full mt-2.5 flex-shrink-0" />
+                      <span>Research and implementation of advanced AI workflows</span>
+                    </li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="relative border-0 bg-white/95 backdrop-blur-sm hover:shadow-lg transition-all">
             <div className="absolute left-8 top-16 bottom-8 w-0.5 bg-gradient-to-b from-secondary to-accent hidden md:block" />
 
             <CardHeader>
@@ -82,7 +121,8 @@ export function Experience() {
                 </div>
               </div>
             </CardContent>
-          </Card>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

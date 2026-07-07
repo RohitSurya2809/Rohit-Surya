@@ -19,7 +19,7 @@ export function About() {
                   <div>
                     <h3 className="text-3xl font-bold text-foreground mb-6">Career Objective</h3>
                     <p className="text-muted-foreground leading-relaxed text-lg">
-                      Aspiring Software Development Engineer & ML Engineer with a passion for{" "}
+                      Aspiring AI and Agentic Automation Engineer with a passion for{" "}
                       <span className="text-secondary font-semibold">AI automation</span>,
                       and solving real-world problems through innovative coding. I'm dedicated to leveraging
                       cutting-edge technology to create impactful solutions.
@@ -37,10 +37,6 @@ export function About() {
                       <li className="flex items-start gap-3">
                         <span className="text-secondary font-bold mt-0.5">→</span>
                         <span>AI Automation & Workflow Optimization</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-secondary font-bold mt-0.5">→</span>
-                        <span>Graph Neural Networks Research</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="text-secondary font-bold mt-0.5">→</span>

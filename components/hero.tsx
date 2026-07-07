@@ -30,12 +30,12 @@ export function Hero() {
 
           {/* Title */}
           <p className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-6 animate-fade-in-up animation-delay-200">
-            Software Development Engineer & ML Engineer
+            AI and Agentic Automation Engineer
           </p>
 
           {/* Description */}
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300">
-            Passionate about AI automation, Graph Neural Networks, and solving real-world problems through innovative
+            Passionate about AI automation and solving real-world problems through innovative
             coding solutions. Currently pursuing B.Tech in AI & Data Science.
           </p>
 
