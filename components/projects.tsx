@@ -1,10 +1,51 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, ExternalLink, Lock, Sprout, Bot } from "lucide-react"
+import { Github, ExternalLink, Lock, Sprout, Bot, Database } from "lucide-react"
 
 export function Projects() {
   const projects = [
+    {
+      title: "DATAORACLE – Agentic AI Data Scientist Platform",
+      description:
+        "Built an enterprise-grade Agentic AI platform that transforms raw CSV and Excel datasets into predictive business intelligence using natural language. Users simply upload their data and ask questions, while a network of specialized AI agents collaboratively analyze datasets, generate machine learning pipelines, execute code securely, recover from execution failures, and deliver explainable insights with interactive visualizations. Designed with a modular multi-agent architecture, DataOracle supports automated ML model generation, self-healing code execution, real-time streaming responses, persistent model inference, and intelligent routing across multiple LLM providers.",
+      icon: Database,
+      technologies: [
+        "Python",
+        "FastAPI",
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "LangChain",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "XGBoost",
+        "PyTorch",
+        "Server-Sent Events (SSE)",
+        "Model Context Protocol (MCP)",
+        "OpenRouter",
+        "Google Gemini",
+        "OpenAI",
+        "Anthropic",
+        "Groq",
+      ],
+      features: [
+        "Multi-agent AI architecture with 20 specialized autonomous agents",
+        "Natural language → Automated Machine Learning pipeline generation",
+        "Secure local Python execution with intelligent self-healing retries",
+        "Automated data profiling, feature engineering, model training, and evaluation",
+        "Explainable AI insights with KPI summaries and interactive visualizations",
+        "Multi-provider LLM routing with automatic fallback (OpenRouter, Gemini, Groq, OpenAI, Anthropic)",
+        "Model persistence for future predictions on unseen datasets",
+        "Real-time progress streaming using Server-Sent Events (SSE)",
+        "70+ modular AI skills dynamically loaded based on task requirements",
+        "Enterprise MCP integrations including GitHub, Google Drive, Kaggle, Hugging Face, PostgreSQL, Browser Automation, and Filesystem",
+      ],
+      status: "In Development",
+      githubUrl: null,
+      demoUrl: null,
+    },
     {
       title: "OPS-AGENT – Failure-Aware Agentic Automation System",
       description:

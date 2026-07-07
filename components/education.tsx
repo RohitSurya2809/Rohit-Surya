@@ -73,7 +73,7 @@ export function Education() {
                     </li>
                     <li className="text-muted-foreground flex items-start gap-3">
                       <span className="text-accent font-bold mt-0.5">›</span>
-                      <span>Agentic AI and Automatiom</span>
+                      <span>Agentic AI and Automation</span>
                     </li>
                   </ul>
                 </div>
