@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Github, Linkedin, Send, Code2 } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Code2 } from "lucide-react"
 
 export function Contact() {
   const contactInfo = [
@@ -28,18 +28,9 @@ export function Contact() {
       value: "Chennai, India",
       href: null,
     },
-    {
-      icon: Github,
-      label: "GitHub",
-      value: "RohitSurya2809",
-      href: "https://github.com/RohitSurya2809",
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "rohit-surya-385143290",
-      href: "https://www.linkedin.com/in/rohit-surya-385143290",
-    },
+  ]
+
+  const codingProfiles = [
     {
       icon: Code2,
       label: "LeetCode",
@@ -120,9 +111,9 @@ export function Contact() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            {/* Contact Information */}
-            <div>
-              <Card className="h-full border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-500">
+            {/* Contact Information & Coding Profiles */}
+            <div className="flex flex-col gap-8">
+              <Card className="flex-1 border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-500">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold mb-2">Contact Information</CardTitle>
                   <p className="text-muted-foreground">
@@ -131,6 +122,44 @@ export function Contact() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {contactInfo.map((info, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start gap-4 p-4 hover:bg-accent/5 rounded-lg transition-all duration-300 group"
+                    >
+                      <div className="p-3 bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg group-hover:from-accent/30 group-hover:to-primary/30 transition-all duration-300 group-hover:scale-110">
+                        <info.icon className="w-5 h-5 text-accent" />
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-1">
+                          {info.label}
+                        </p>
+                        {info.href ? (
+                          <a
+                            href={info.href}
+                            target={info.href.startsWith("http") ? "_blank" : undefined}
+                            rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                            className="font-bold text-foreground hover:text-accent transition-colors text-base"
+                          >
+                            {info.value}
+                          </a>
+                        ) : (
+                          <p className="font-bold text-foreground text-base">{info.value}</p>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+
+              <Card className="flex-1 border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-500">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold mb-2">Coding Profiles</CardTitle>
+                  <p className="text-muted-foreground">
+                    Check out my problem-solving skills across various platforms.
+                  </p>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {codingProfiles.map((info, index) => (
                     <div
                       key={index}
                       className="flex items-start gap-4 p-4 hover:bg-accent/5 rounded-lg transition-all duration-300 group"

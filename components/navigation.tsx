@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, Download } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useActiveSection } from "@/hooks/use-active-section"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -84,6 +85,7 @@ export function Navigation() {
                 Resume
               </a>
             </Button>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -120,6 +122,9 @@ export function Navigation() {
                     Resume
                   </a>
                 </Button>
+              </div>
+              <div className="px-3 py-2">
+                <ThemeToggle />
               </div>
             </div>
           </div>
